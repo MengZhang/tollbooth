@@ -1,0 +1,14 @@
+*.swp
+logs
+project/project
+project/target
+target
+/conf/application.conf
+tmp
+/.classpath
+/.project
+/.settings
+/.target
+*~
+/.idea_modules
+

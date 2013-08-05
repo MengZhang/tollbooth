@@ -1,0 +1,16 @@
+@(form :Form[Application.Login], forUrl:String)
+
+@main("AgMIP Authentication") {
+ @helper.form(routes.Application.authenticate) {
+  <h1>Sign In</h1>
+  @if(form.hasGlobalErrors) {
+   <p class="error">
+    @form.globalError.message
+   </p>
+  }
+  <input type="hidden" name="for" value="@forUrl" />
+  @helper.inputText(form("username"))
+  @helper.inputPassword(form("password"))
+  <input type="submit" value="Login"/>
+ }
+}
