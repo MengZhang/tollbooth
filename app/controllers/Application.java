@@ -30,7 +30,7 @@ public class Application extends Controller {
                     return ok("DISPLAY LIST OF AGMIP SITES");
                 }
             } else {
-                response().discardCookie(RestedCrowdPlugin.getCookieSettings().getName());
+                response().discardCookie(RestedCrowdPlugin.getCookieSettings().getName(), "/", ".agmip.org");
                 // Add an indicator for the user to know that their session has
                 // expired here.
                 return ok(login.render(loginForm, forUrl));
@@ -55,7 +55,7 @@ public class Application extends Controller {
         String forUrl = DynamicForm.form().bindFromRequest().get("for");
         if (ssoToken != null) {
             RestedCrowdPlugin.crowdRequest("session/"+ssoToken.value()).delete().get();
-            response().discardCookie(RestedCrowdPlugin.getCookieSettings().getName());
+            response().discardCookie(RestedCrowdPlugin.getCookieSettings().getName(), "/", ".agmip.org");
         }
         if (forUrl != null) {
             return redirect(forUrl);
