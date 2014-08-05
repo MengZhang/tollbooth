@@ -1,7 +1,7 @@
-Nadar - A Crowd SSO Front End Application
+Tollbooth - A Crowd SSO Front End Application
 =========================================
 
-Nadar is a web-based front end for Crowd SSO Authentication. This simple
+Tollbooth is a web-based front end for Crowd SSO Authentication. This simple
 site is used to authenticate users, add the global crowd token (taken from
 the _REST_BASEURL_/config/cookie) and then forward the user along.
 

@@ -1,16 +1,22 @@
-@(form :Form[Application.Login], forUrl:String)
+@(form :Form[Application.TollboothLogin], forUrl:String, svc:String)
 
-@main("AgMIP Authentication") {
- @helper.form(routes.Application.authenticate) {
-  <h1>Sign In</h1>
+@main("AgMIP Authentication", Html("loginPos")) {
+@helper.form(routes.Application.authenticate, 'class -> "form-signin col-sm-4", 'role -> "form") {
   @if(form.hasGlobalErrors) {
    <p class="error">
     @form.globalError.message
    </p>
   }
   <input type="hidden" name="for" value="@forUrl" />
-  @helper.inputText(form("username"))
-  @helper.inputPassword(form("password"))
-  <input type="submit" value="Login"/>
+  <input type="hidden" name="s" value="@svc" />
+        	<div class="left-inner-addon">
+        		<i class="fa fa-user"></i> 
+        		<input type="text" name="username" class="form-control loginInput" placeholder="Username" required autofocus>
+        	</div>
+        	<div class="left-inner-addon">
+        		<i class="fa fa-key"></i> 
+        		<input type="password" name="password" class="form-control loginInput" placeholder="Password" required>
+        	</div>
+        <button class="greenBtn" type="submit">Login</button>
  }
 }

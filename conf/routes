@@ -4,10 +4,13 @@
 
 # Home page
 GET     /                           controllers.Application.index()
-POST	/							controllers.Application.authenticate()
+POST	/						    controllers.Application.authenticate()
 GET     /logout                     controllers.Application.logout()
 GET     /email/:token               controllers.Application.lookupEmail(token: String)
-GET     /profile/:token             controllers.Application.lookupProfile(token: String)
+#GET     /profile/:token             controllers.Application.lookupProfile(token: String)
+GET     /validate/:token            controllers.Application.validateToken(token: String)
+POST    /validate		            controllers.Application.postValidateToken()
+POST    /extern/auth                controllers.Application.pullExternCache()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

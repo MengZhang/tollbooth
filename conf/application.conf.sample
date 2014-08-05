@@ -67,6 +67,9 @@ logger.play=INFO
 # Logger provided to your application:
 logger.application=DEBUG
 
+tollbooth.baseurl="http://localhost:9110/"
 crowd.baseurl="https://localhost:8095/crowd/rest/usermanagement/1/"
 crowd.app.name="sample-application"
 crowd.app.password="sample-application-password"
+extern.sample.key=""
+extern.sample.url="http://localhost/extern_auth.php"

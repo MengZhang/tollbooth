@@ -1,0 +1,367 @@
+/* Homepage Styles */
+
+.headers_bg{
+ background-image:url('images/header_divider.png');
+ height:15px;
+background-position: center bottom !important;
+  }
+.homepageTitle{
+	color:#97a5a6 !important;
+	font-weight:normal;
+	font-size:24px !important;  
+  }
+.homepageTitleSecTxt{
+	color:#97a5a6 !important;
+	font-weight:normal;
+	font-size:21px !important;  
+  }
+.homepage_text{
+  color:#97a5a6 !important; 
+}
+.homepage_link{
+color:#3294d6;
+font-weight:bold !important;
+text-decoration:none !important;
+}
+.homepage_link:hover{
+color:#004171;
+}
+.menuDivider{
+margin-right:5px !important;
+}
+.bottomHomeContent{
+float:none;
+margin-left:auto;
+margin-right:auto;
+padding-top:15px !important;
+}
+ @media (max-height: 768px) {
+ .macbookImg{
+   height:298px;
+   width:597px;
+ }
+ }
+
+/* footer styles */
+
+.yellowText{
+color:#f1c40f !important;
+}
+
+.envIcon{
+float:left;
+padding-right:15px;
+color:#f1c40f !important;
+}
+
+
+/* Upload page Styles*/
+.numTxt{
+font-size:18px;
+float:right;
+}
+.genTxt{
+font-size:14px;
+position:relative; 
+left:20px;
+float:right;
+}
+.padLeft{
+padding-left:15px;
+}
+.dataSecTxt{
+margin-top: -10px;
+font-weight:normal;
+}
+.topUploadSection{
+      		background:#fffffff !important;
+      		padding-top:60px;
+      		padding-bottom:15px;
+      }
+      .midUploadSection{
+      		background:#fafafa !important;
+      		padding-top:15px;
+      		padding-bottom:15px;
+      }
+      .iconSetSimu{
+       color:#ffffff;
+       background:#f1c40f !important;
+       padding-top:5px;
+       padding-bottom:5px;
+       height:55px;
+       }
+      .iconSetWeat{
+       color:#ffffff;
+       background:#3395d7 !important;
+       padding-top:5px;
+       padding-bottom:5px;
+       height:55px;
+       margin-left:auto;
+       margin-right:auto;
+       }
+      .iconSetSoils{
+       color:#ffffff;
+       background:#24a95c !important;
+       padding-top:5px;
+       padding-bottom:5px;
+       height:55px;
+       margin-right:0px;
+       float:right ;
+       }
+       .soils{
+       padding-right:0px;
+       }
+       .widhund{
+       width:100%;
+       }
+        .bottomContentSection{
+      		background:#f1f1f1 !important;
+      		padding-top:15px;
+      		padding-bottom:15px;
+      }
+/* Login Page Styles*/
+
+.loginBtn{
+padding-top:4px;
+}
+.logHt{
+min-height:55px;
+}
+.loginForm{
+background:#eeeeee;
+padding:15px;
+float:none;
+margin-left:auto;
+margin-right:auto;
+border: 1px solid  #d8d7d7;
+}
+.loginInput{
+margin-bottom:15px;
+border-radius:0px;
+}
+.loginPos{
+position:relative;
+top:60px;
+}
+ @media (min-width: 768px) and (max-width: 1024px){
+.loginPos{
+position:relative;
+top:50px;
+}
+ 
+ 
+ }
+ @media (min-height: 768px) {
+.loginPos{
+position:relative;
+top:175px;
+}
+ 
+ 
+ }
+
+.loginImg{
+margin-left:auto;
+margin-right:auto;
+float:none !important;
+margin-bottom:5px;
+text-align:center;
+}
+.frgtpassword{
+padding-left:2px;
+}
+ .left-inner-addon {
+    position: relative;
+    color:#97a5a6 !important;
+}
+.left-inner-addon input {
+    padding-left: 30px;    
+}
+.left-inner-addon i {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+/* Search Styles*/
+
+.collapseBtn{
+cursor:pointer;
+color:#97a5a6 !important;
+}
+
+.resultsNum{
+font-size:30px;
+color:#24a95c;
+font-weight:normal;
+}
+.greyTxt{
+color:#97a5a6;
+}
+
+.ShowResTxt{
+margin-top:-11px;
+}
+
+/*Generic Styles*/
+.borRad{
+border-radius:0px !important;
+}
+.dataExchange{
+display:inline;
+position:relative;
+top:3px;
+text-decoration:none;
+}
+.menuPad{
+padding-top:1px;
+}
+.txtcnt{
+text-align:center;
+}
+.disIn{
+display:inline;
+}
+.titleText{
+font-weight:normal;
+float:none;
+margin-left:auto;
+margin-right:auto;
+width:50%;
+font-size:14px;
+}
+.helpBtn{
+      		width:61px; 
+      		height:35px;
+      		background:#3395d7;
+      		color:#ffffff;
+      		font-size:24px;
+      		text-align:center;
+      		font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+            position:relative;
+            top:25px;
+      }
+.greenBtn{
+       color: #ffffff !important;
+       background: #24a95c;
+       min-width:80px;
+       height:35px;
+       margin-top:7px !important;
+       border-radius:0px;
+       border:none !important;
+      }
+.redBtn{
+       color: #ffffff !important;
+       background: #bb382b;
+       min-width:80px;
+       height:35px;
+       margin-top:7px !important;
+       text-align:center;
+      }
+.redBtn:hover{
+       color: #ffffff !important;
+       background: #982f24 !important;
+      }
+.greenBtn:hover{
+       color: #ffffff !important;
+       background: #219050 !important;
+      }
+.greenBtnText{
+       text-align:center;
+       position:relative;
+       top:-7px;
+       left:auto;
+      }
+.agmipLogo{
+margin-left:15px !important;
+text-decoration:none !important;
+font-size:16px;
+color:#999999 !important;
+}
+.mainMenuDrop:hover{
+color:#000000 !important;
+background: transparent !important;
+}
+.nav a:hover .caret {
+border-top-color: #000000 !important;
+border-bottom-color: #000000 !important;
+}
+.dropdown-menu > li > a:hover{
+background:#48972e !important;
+color:#fff;
+}
+@media (min-width: 1024px)and (max-width:1170px) {
+.soilText{
+position:relative;
+top:10px;
+}
+}
+@media (min-width: 769px) and (max-width:990px) {
+.soils {
+font-size:10px !important;
+
+}
+.iconSetWeat{
+margin-left:25px;
+font-size:10px !important;
+width:200px;
+}
+.iconSetSimu{
+font-size:10px !important;
+width:212px;
+}
+}
+@media (max-width: 768px) {
+.mainImage{
+	width:70%;
+	}
+	
+.greenBtn{
+padding-bottom:17px;
+}
+
+.soils{
+padding-right: 15px !important;
+}
+.iconSetSoils{
+width:100% !important;
+}
+.leaf{
+display:inline !important;
+}
+}
+
+@media (max-width: 600px) {
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -141px !important;
+  /* Pad bottom by footer height */
+  padding: 0 0 141px !important;
+}
+/* Set the fixed height of the footer here */
+#footer {
+  height: auto !important;
+  background:#666666 !important;
+       		font-size:10px;
+       		color:#ffffff;
+       		padding-bottom:5px;
+}
+
+.soils{
+padding-right: 15px !important;
+}
+.iconSetSoils{
+width:100% !important;
+}
+.leaf{
+display:inline !important;
+}
+}
+
+@media (min-width: 400px) {
+#footer{
+height:auto !important;
+}
+}
