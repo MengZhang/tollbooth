@@ -1,12 +1,10 @@
 # This is the main configuration file for the application.
 # ~~~~~
-
 # Secret key
 # ~~~~~
 # The secret key is used to secure cryptographics functions.
 # If you deploy your application to several instances be sure to use the same key!
-# Please generate this and make it confusing
-application.secret=""
+application.secret="abc123-pick something secure"
 
 # The application languages
 # ~~~~~
@@ -68,8 +66,9 @@ logger.play=INFO
 logger.application=DEBUG
 
 tollbooth.baseurl="http://localhost:9110/"
-crowd.baseurl="https://localhost:8095/crowd/rest/usermanagement/1/"
-crowd.app.name="sample-application"
-crowd.app.password="sample-application-password"
-extern.sample.key=""
-extern.sample.url="http://localhost/extern_auth.php"
+crowd.baseurl="https://secure.agmip.org/crowd/rest/usermanagement/1/"
+crowd.app.name="appname"
+crowd.app.password="password"
+
+extern.site.key="abc123"
+extern.site.url="http://localhost/extern_auth.php"
